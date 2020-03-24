@@ -9,16 +9,19 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
 </head>
 <body>
-    <div>
-        <h1>Hello World (from the view)</h1>
+    <div class="text-center">
+        @*<h1>Hello World (from the view)</h1>
         <h2>@ViewBag.Greeting</h2>
-        <h3>@ViewBag.Time</h3>
-        <p>We' re going to have an exciting party. <br />
-        <img src="https://www.imgworlds.com/wp-content/uploads/2015/11/15-PRIVATEPARITES-BIRTHDAYPARTIES600X300.jpg">
-        </p>
-        <a asp-action="RsvpForm">RSVP Now</a>
+        <h3>@ViewBag.Time</h3>*@
+        <h3>We're going to have an exciting party.</h3>
+        <h4>And you are invited</h4>
+        <a class="btn btn-primary" asp-action="RsvpForm">RSVP Now</a>
+        <br />
+        <div><img class="img-thumbnail" src="https://www.imgworlds.com/wp-content/uploads/2015/11/15-PRIVATEPARITES-BIRTHDAYPARTIES600X300.jpg"></div>
+
     </div>
 </body>
 </html>
